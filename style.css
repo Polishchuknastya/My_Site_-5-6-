@@ -1,0 +1,226 @@
+body {
+  background-color:#B0C4DE;
+}
+header {
+  background-color:#483D8B;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.name {
+  font-size: 60px;
+  color:#FFFFFF;
+  text-align: center;
+  padding-top: 1px;
+  font-weight: 800;
+}
+.name p {
+  text-shadow: 5px 5px 2px #7B68EE, 6px 6px 3px #FFFFFF;
+}
+img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pictures__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.pictures img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.sidebar {
+  background-color: white;
+  border-radius: 15px;
+  width: 20%;
+  margin-left: 10px;
+  -webkit-box-shadow: inset 30px 30px 30px #FFC0CB;
+  box-shadow: inset 20px 20px 20px #FFC0CB;
+}
+.sidebar p {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 40px;
+  text-align: center;
+  padding-left: 40%;
+  padding-top: 35%;
+  color: #f05e5e;
+  font-weight: bold;
+}
+.inform {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+.text__information {
+  height: 300px;
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 15px;
+}
+.text__information p {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #7B68EE;
+  border-radius: 15px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.name_of p {
+  font-size: 40px;
+  margin: 10px 0;
+  font-weight: 800;
+}
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.navigation a {
+  padding-right: 15px;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.navigation a:hover {
+  color: #483D8B;
+}
+
+.form__sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+.form__sub input {
+  margin-bottom: 5px;
+}
+.fixed {
+  position: fixed;
+  background-color: #FFC0CB;
+  border-radius: 50%;
+  padding: 10px 5px;
+  left: 95%;
+  width: 34px;
+  overflow: hidden;
+  letter-spacing: 0.9px;
+  white-space: nowrap;
+}
+.fixed a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.fixed:hover {
+  width: 110px;
+  padding-left: 20px;
+  left: 90%;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 50px 0 30px 0;
+  }
+  .pictures__block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+  .pictures {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    justify-items: center;
+  }
+  .inform {
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    margin: 0 auto;
+    width: 80%;
+  }
+  img {
+    width: 60%;
+  }
+  .sidebar {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .sidebar p {
+    -webkit-writing-mode: lr-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: lr-tb;
+    padding: 0;
+  }
+  .fixed {
+    left: 90%;
+  }
+  .fixed:hover {
+    left: 85%;
+  }
+}
